@@ -25,3 +25,9 @@
 - [ ] Day 23
 - [ ] Day 24
 - [ ] Day 25
+
+# Use this template
+First, clone the repository and install composer dependencies `composer install`
+Then, you can create a new day which copies the `DayX.php` file by running `composer day 2` where 2 is the day number we are creating.
+Then you can work within the newly created day file to complete part 1 and 2 of the day.
+Finally, you can run a day by running `php src/index.php -d 1`.
