@@ -6,7 +6,7 @@ use AOC2023\BaseClass;
 
 class Day3 extends BaseClass
 {
-    public bool $withPerformance = false;
+    public bool $withPerformance = true;
 
     public function setupPath() : void
     {

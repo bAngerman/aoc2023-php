@@ -4,7 +4,7 @@ namespace AOC2023;
 
 class AOCPerformance
 {
-    private int $startTime;
+    private float $startTime;
 
     public function __construct()
     {
@@ -13,13 +13,13 @@ class AOCPerformance
 
     public function reportPerformance() : void
     {
-        dump("Script took " . $this->getScriptTime() . " seconds");
+        dump("Script took " . $this->getScriptTime() . " s");
         dump("Script used " . $this->getMemoryUsage());
     }
 
     private function getScriptTime() : float
     {
-        return round(microtime(true) - $this->startTime, 4);
+        return (microtime(true) - $this->startTime);
     }
 
     function getMemoryUsage()

@@ -11,9 +11,7 @@ require __DIR__  . '/../vendor/autoload.php';
  */
 
 $short_opts = "d:";
-$long_opts = [
-    "performance",
-];
+$long_opts = [];
 
 $options = getopt($short_opts, $long_opts);
 
